@@ -26,6 +26,7 @@ env:
   CONFIG_FILE: pve-simple.config
   DIY_P1_SH: beforeUpdateFeeds.sh
   DIY_P2_SH: afterUpdateFeeds.sh
+#  DIY_P3_SH: changeFeeds.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
@@ -71,6 +72,12 @@ jobs:
 
       - name: Update feeds
         run: cd openwrt && ./scripts/feeds update -a
+
+#      - name: Change feeds
+#        run: |
+#          chmod +x $DIY_P3_SH
+#          cd openwrt
+#          $GITHUB_WORKSPACE/$DIY_P3_SH
 
       - name: Install feeds
         run: cd openwrt && ./scripts/feeds install -a
