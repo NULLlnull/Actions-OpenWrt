@@ -19,8 +19,3 @@
 echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 #echo 'src-git kenzo https://github.com/NULLlnull/openwrt-packages' >>feeds.conf.default
-
-
-#修改默认主题
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
-sed -i 's/Bootstrap/Argon/g' feeds/luci/collections/luci/Makefile
