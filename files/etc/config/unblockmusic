@@ -1,0 +1,10 @@
+
+config unblockmusic
+        option endpoint 'http://music.163.com'
+        option enabled '1'
+        option apptype 'cloud'
+        option cloudserver '192.168.1.2:7788'
+
+config acl_rule
+        option filter_mode 'disable'
+        option ipaddr '192.168.1.2'
