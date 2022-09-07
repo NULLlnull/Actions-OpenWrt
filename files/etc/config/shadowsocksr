@@ -35,6 +35,7 @@ config access_control
 	list wan_fw_ips '91.108.56.0/22'
 	list wan_fw_ips '109.239.140.0/24'
 	list Interface 'lan'
+	list lan_bp_ips '192.168.1.66'
 
 config socks5_proxy
 	option server 'nil'
