@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt
+name: Build CR6608
 
 on:
   repository_dispatch:
@@ -23,7 +23,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: pve-simple.config
+  CONFIG_FILE: CR6608.config
   DIY_P1_SH: beforeUpdateFeeds.sh
   DIY_P2_SH: afterInstallFeeds.sh
 #  DIY_P3_SH: changeFeeds.sh

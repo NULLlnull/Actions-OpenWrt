@@ -17,7 +17,7 @@ config global
 	option gfwlist_url 'https://gitlab.com/gfwlist/gfwlist/raw/master/gfwlist.txt'
 	option netflix_enable '0'
 	option adblock '0'
-	option tunnel_forward '192.168.1.2:54'
+	option tunnel_forward '172.30.1.2:54'
 
 config server_subscribe
 	option proxy '0'
@@ -35,7 +35,7 @@ config access_control
 	list wan_fw_ips '91.108.56.0/22'
 	list wan_fw_ips '109.239.140.0/24'
 	list Interface 'lan'
-	list lan_bp_ips '192.168.1.66'
+	list lan_bp_ips '172.30.1.66'
 
 config socks5_proxy
 	option server 'nil'
